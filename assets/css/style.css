@@ -1,0 +1,103 @@
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+body{
+  overflow: hidden;
+}
+
+.card {
+    width: 350px;
+    min-height: 350px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: black;
+    background-image: url(../images/stardust.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex; 
+    flex-direction: column;
+    justify-content: end;
+  }
+ 
+  h1{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 52px;
+    margin: 0;
+  }
+
+.partage{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 95%;
+}
+
+ .container-button a{
+  max-width: 80px;
+  max-height: 80px;
+} 
+
+.container-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.spotify{
+  max-width: 80px;
+}
+
+/* cartes netflix */
+
+.netflix{
+  display: flex;
+ 
+  flex-direction: row;
+}
+
+.netflix {
+  display: flex;
+ margin-top: 50px; 
+ 
+  width: 1000px;
+}
+
+.item {
+  position: relative;
+  display: block;
+  flex: 1 1 0px;
+  transition: transform 500ms;
+}
+
+.netflix:focus-within .item,
+.netflix:hover .item {
+  transform: translateX(-25%);
+}
+
+.item:focus ~ .item,
+.item:hover ~ .item {
+  transform: translateX(25%);
+}
+
+.netflix .item:focus,
+.netflix .item:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+.item{
+  position: relative;
+  display: block;
+   flex: 1 1 0px; 
+  flex-direction: row;
+  transition: transform 500ms;
+}
+
+.item img{
+  display: block;
+  flex-direction: row;
+  max-width: 100%;
+}
